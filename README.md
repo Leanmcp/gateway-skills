@@ -1,52 +1,59 @@
 <div align="center">
 
-# Clear-Code
+# LeanMCP AI Gateway
 
-### The Ultimate Guide to Open-Source AI Coding Assistants
+### See everything your AI coding agent sends. Every request, every file, every token.
 
 [![Discord](https://img.shields.io/badge/Discord-Join%20Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/DsRcA3GwPy)
 [![Follow on X](https://img.shields.io/badge/X-Follow%20@paidev-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/paidev)
-[![Stars](https://img.shields.io/github/stars/chatgptprojects/clear-code?style=for-the-badge&color=yellow)](https://github.com/chatgptprojects/clear-code/stargazers)
+[![Stars](https://img.shields.io/github/stars/Leanmcp/superview.sh?style=for-the-badge&color=yellow)](https://github.com/Leanmcp/superview.sh/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](./LICENSE)
 
----
-
-## Want to see what YOUR Claude Code actually sends?
-
-Every request. Every file it reads. Every token it burns.
-
-[See your Claude Code logs →](https://leanmcp.com/ai-gateway?utm_source=clear-code&utm_medium=github&utm_campaign=readme)
-One URL change. No code required.  
-[Docs](https://docs.leanmcp.com/ai-gateway/claude-code)
+[Website](https://leanmcp.com/ai-gateway?utm_source=superview&utm_medium=github&utm_campaign=readme) · [Docs](https://docs.leanmcp.com/ai-gateway/claude-code) · [Dashboard](https://app.leanmcp.com)
 
 ---
 
 </div>
 
+## What is the LeanMCP AI Gateway?
 
-#### Two lines to get full visibility on what's your Claude Code doing.
+The LeanMCP AI Gateway is a drop-in proxy that sits between your AI coding agent (Claude Code, or anything that speaks the Anthropic or OpenAI API) and the model provider. You change one URL, and every request shows up in your dashboard:
+
+- **Full request and response logs.** See the exact prompts, system prompts and tool calls your agent sends.
+- **File visibility.** See which files the agent read and what it pulled into context.
+- **Token and cost tracking.** Per request, per session and per project.
+- **No code changes.** It's one environment variable. Your agent keeps working exactly as before.
+
+## Quick start: Claude Code
+
+Two lines give you full visibility into what Claude Code is doing:
 
 ```bash
 export ANTHROPIC_BASE_URL=https://aigateway.leanmcp.com/v1/anthropic
 export ANTHROPIC_API_KEY=your_leanmcp_key
 ```
-#### Run any Claude Code task — go [here](https://app.leanmcp.com) to see the logs. Get your key at [here](app.leanmcp.com/billing)
 
---- 
+1. Get your key at [app.leanmcp.com/billing](https://app.leanmcp.com/billing).
+2. Run any Claude Code task.
+3. Open [app.leanmcp.com](https://app.leanmcp.com) to see the logs.
 
-<div align="center">
+Full setup guide: [docs.leanmcp.com/ai-gateway/claude-code](https://docs.leanmcp.com/ai-gateway/claude-code)
 
-**Clear-Code** is a comprehensive, community-driven resource hub dedicated to cataloging, comparing, and promoting the best **open-source AI coding assistants** available today. Whether you're a solo developer, a startup founder, or part of a large engineering team, this repository is your one-stop guide to finding the right AI-powered coding tool — without vendor lock-in, without closed-source limitations, and without the hefty price tags.
+## What's in this repo
 
-The AI coding assistant space is evolving at breakneck speed. New tools launch every week, existing tools ship major updates constantly, and it's nearly impossible to keep up. **Clear-Code** exists to cut through the noise, give you honest comparisons, and help you pick the tools that actually make you more productive.
-
-[Join our Discord](https://discord.com/invite/DsRcA3GwPy) | [Follow @paidev on X](https://x.com/paidev) | [Read the Post](https://x.com/paidev/status/2039014896650858586?s=20)
-
-</div>
+| Path | What it is |
+|------|------------|
+| [`skills/`](./skills/) | Claude Code skills we use day to day: MCP server builders, inference and training workflows, research tooling, and more. See the [skills index](./skills/README.md). |
+| [`claude-code-skills/`](./claude-code-skills/) | A style-guide skill for contributing to the Claude Code codebase. |
+| [Open-source AI coding guide](#featured-open-source-ai-coding-assistants) | A comparison of the best open-source AI coding assistants (below). |
 
 ---
 
 ## Table of Contents
 
+- [What is the LeanMCP AI Gateway?](#what-is-the-leanmcp-ai-gateway)
+- [Quick start: Claude Code](#quick-start-claude-code)
+- [What's in this repo](#whats-in-this-repo)
 - [Why Open Source Matters for AI Coding](#why-open-source-matters-for-ai-coding)
 - [Featured Open-Source AI Coding Assistants](#featured-open-source-ai-coding-assistants)
   - [Cline](#1-cline)
@@ -110,7 +117,7 @@ That means:
 
 The open-source ecosystem for AI coding tools has exploded in 2025–2026. What was once a barren landscape with a few experimental projects is now a thriving ecosystem of production-ready tools that rival — and in many cases surpass — their proprietary counterparts.
 
-**Clear-Code** is here to help you navigate this ecosystem.
+This guide is here to help you navigate this ecosystem.
 
 ---
 
@@ -391,15 +398,19 @@ This repo includes a **Claude Code skill** in the [`claude-code-skills/`](./clau
 
 If you contribute to Claude Code itself, install this skill to ensure your AI-assisted changes match the existing codebase style. See the [skills README](./claude-code-skills/README.md) for installation instructions.
 
+### More skills
+
+The [`skills/`](./skills/) directory holds the skills the LeanMCP team uses every day, covering MCP server development, Fireworks and Tinker inference and training, research observability, security reproductions, and more. Copy any folder into `~/.claude/skills/` to use it. The [skills index](./skills/README.md) lists them all.
+
 ---
 
 ## Community & Contributing
 
-**Clear-Code** is a community-driven project. We believe that the future of AI-assisted development should be open, transparent, and accessible to everyone.
+This repo is a community-driven project maintained by [LeanMCP](https://leanmcp.com). We believe that the future of AI-assisted development should be open, transparent, and accessible to everyone.
 
 ### Join Our Community
 
-- **Discord:** [Join the Clear-Code Discord](https://discord.com/invite/DsRcA3GwPy) — Chat with other developers, share your setups, get help, and stay updated on the latest in open-source AI coding.
+- **Discord:** [Join the LeanMCP Discord](https://discord.com/invite/DsRcA3GwPy) — Chat with other developers, share your setups, get help, and stay updated on the latest in open-source AI coding.
 - **X (Twitter):** Follow [@paidev](https://x.com/paidev) for the latest updates, hot takes, and discussions about open-source AI coding tools.
 
 ### How to Contribute
@@ -410,6 +421,8 @@ We welcome contributions of all kinds:
 - **Update information.** Tools evolve fast. If any information here is outdated, please help us keep it current.
 - **Share your experience.** Write about your experience using these tools. What worked? What didn't? Your real-world insights help everyone.
 - **Spread the word.** Star this repo, share it with your team, and help us grow the community.
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for how to open a PR, and [SECURITY.md](./SECURITY.md) for how to report a vulnerability.
 
 ---
 
@@ -435,11 +448,11 @@ Helpful resources for getting deeper into AI-assisted coding:
 
 ## Star History
 
-<a href="https://www.star-history.com/?repos=chatgptprojects%2Fclear-code&type=date&legend=top-left">
+<a href="https://www.star-history.com/?repos=Leanmcp%2Fsuperview.sh&type=date&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=chatgptprojects/clear-code&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=chatgptprojects/clear-code&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=chatgptprojects/clear-code&type=date&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=Leanmcp/superview.sh&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=Leanmcp/superview.sh&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=Leanmcp/superview.sh&type=date&legend=top-left" />
  </picture>
 </a>
 
@@ -447,7 +460,7 @@ Helpful resources for getting deeper into AI-assisted coding:
 
 <div align="center">
 
-If you have read till here, you definitely deserve some good stuff. Go to app.leanmcp.com and use coupon code LEANMCP26 at checkout to get $99 claude code tokens. You can use them in your claude code for free. You can observe your claude sessions in app.leanmcp.com
+If you have read till here, you definitely deserve some good stuff. Go to [app.leanmcp.com](https://app.leanmcp.com) and use coupon code LEANMCP26 at checkout to get $99 claude code tokens. You can use them in your claude code for free. You can observe your Claude sessions in [app.leanmcp.com](https://app.leanmcp.com).
 
 More about this in the [Docs](https://docs.leanmcp.com/ai-gateway/claude-code)
 
