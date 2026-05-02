@@ -1,0 +1,38 @@
+{
+  "name": "my-mcp-app",
+  "version": "1.0.0",
+  "description": "MCP App with Interactive UI",
+  "main": "dist/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "leanmcp dev",
+    "start": "leanmcp start",
+    "build": "leanmcp build",
+    "start:node": "node dist/main.js",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "leanmcp",
+    "mcp-app",
+    "ui"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@leanmcp/core": "^0.4.7",
+    "@leanmcp/ui": "^0.3.7",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "@leanmcp/cli": "latest",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.6.3"
+  }
+}
