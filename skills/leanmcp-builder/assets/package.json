@@ -1,0 +1,31 @@
+{
+  "name": "my-leanmcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server with LeanMCP SDK",
+  "main": "dist/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "leanmcp dev",
+    "start": "leanmcp start",
+    "build": "leanmcp build",
+    "start:node": "node dist/main.js",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "leanmcp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@leanmcp/core": "latest",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "@leanmcp/cli": "latest",
+    "@types/node": "^20.0.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.6.3"
+  }
+}
