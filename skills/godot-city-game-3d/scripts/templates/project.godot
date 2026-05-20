@@ -1,0 +1,41 @@
+; Engine configuration file.
+; Godot 4.x
+
+config_version=5
+
+[application]
+
+config/name="{{PROJECT_NAME}}"
+config/description="Procedurally generated 3D city."
+run/main_scene="res://scenes/main.tscn"
+; Uncapped, the GPU renders frames past what the display can show and the
+; machine cooks itself for nothing. 60 costs no latency and roughly halves
+; power draw on a scene this size.
+run/max_fps=60
+
+[autoload]
+
+GameInput="*res://scripts/game_input.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/vsync/vsync_mode=1
+
+[layer_names]
+
+3d_physics/layer_1="world"
+3d_physics/layer_2="player"
+3d_physics/layer_3="enemy"
+
+[physics]
+
+3d/default_gravity=20.0
+
+[rendering]
+
+; Forward+ on desktop. Browsers only run Compatibility, so the web export
+; overrides just that platform rather than downgrading the desktop build.
+renderer/rendering_method="forward_plus"
+renderer/rendering_method.web="gl_compatibility"
