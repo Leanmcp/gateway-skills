@@ -7,7 +7,7 @@ failure is one of them being wrong while you debug another.
    YOUR CODE            TRANSPORT              ROUTE                 MODEL
    ─────────            ─────────              ─────                 ─────
    your loop     ->  raw HTTP  /  openai  ->  direct Fireworks  ->  serverless
-   a framework       SDK       /  litellm     LeanMCP gateway       dedicated deployment
+   a framework       SDK       /  litellm     Leanmcp gateway       dedicated deployment
 ```
 
 ## The route matrix
@@ -15,7 +15,7 @@ failure is one of them being wrong while you debug another.
 | | base URL | key |
 | --- | --- | --- |
 | **direct Fireworks** | `https://api.fireworks.ai/inference/v1` | `FIREWORKS_API_KEY` |
-| **LeanMCP gateway** | `https://aigateway.leanmcp.com/v1/fireworks` | `LEANMCP_API_KEY` |
+| **Leanmcp gateway** | `https://aigateway.leanmcp.com/v1/fireworks` | `LEANMCP_API_KEY` |
 
 Same models, same request shape, same response shape. **Only the endpoint and
 the key change** — which is what makes a proxy toggle a one-line flag rather
@@ -25,7 +25,7 @@ The gateway forwards to Fireworks and logs every request at
 <https://app.leanmcp.com/observability>. Keys: <https://app.leanmcp.com/api-keys>
 (top up credits first at <https://app.leanmcp.com/billing>).
 
-Note the key swap. Through the gateway you send your **LeanMCP** key, not your
+Note the key swap. Through the gateway you send your **Leanmcp** key, not your
 Fireworks key — the gateway holds the Fireworks credential. Sending the
 Fireworks key to the gateway fails in a way that reads like a bad gateway.
 
@@ -68,7 +68,7 @@ litellm.completion(
     model="fireworks_ai/accounts/fireworks/models/gpt-oss-20b",
     messages=[...],
     api_base="https://aigateway.leanmcp.com/v1/fireworks",   # no /chat/completions
-    api_key=os.environ["LEANMCP_API_KEY"],                    # LeanMCP, not Fireworks
+    api_key=os.environ["LEANMCP_API_KEY"],                    # Leanmcp, not Fireworks
 )
 ```
 

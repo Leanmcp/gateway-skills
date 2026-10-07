@@ -1,11 +1,11 @@
 ---
 name: leanmcp-builder
-description: Build MCP servers using the LeanMCP SDK with decorator-based TypeScript. Use this skill when users ask for "leanmcp", "MCP with decorators", "MCP with authentication", "MCP with elicitation", "MCP with environment injection", or want a simpler, more elegant way to build MCP servers. LeanMCP provides automatic schema generation, dependency injection, authentication, and user input collection.
+description: Build MCP servers using the Leanmcp SDK with decorator-based TypeScript. Use this skill when users ask for "leanmcp", "MCP with decorators", "MCP with authentication", "MCP with elicitation", "MCP with environment injection", or want a simpler, more elegant way to build MCP servers. Leanmcp provides automatic schema generation, dependency injection, authentication, and user input collection.
 ---
 
-# LeanMCP Builder Skill
+# Leanmcp Builder Skill
 
-This skill guides you in building MCP servers using the LeanMCP SDK - a decorator-based TypeScript framework for elegant MCP development.
+This skill guides you in building MCP servers using the Leanmcp SDK - a decorator-based TypeScript framework for elegant MCP development.
 
 ## When to Use This Skill
 
@@ -17,9 +17,9 @@ This skill guides you in building MCP servers using the LeanMCP SDK - a decorato
 - User needs "user input collection" or "elicitation"
 - User wants "environment injection" for multi-tenant secrets
 
-## LeanMCP vs Vanilla MCP
+## Leanmcp vs Vanilla MCP
 
-| Feature | Vanilla MCP | LeanMCP SDK |
+| Feature | Vanilla MCP | Leanmcp SDK |
 |---------|-------------|-------------|
 | Tool definition | Manual schema | `@Tool` decorator with auto-schema |
 | Input validation | Manual | Automatic with `@SchemaConstraint` |
@@ -260,7 +260,7 @@ export class SecureService {
 }
 ```
 
-**Supported providers:** AWS Cognito, Clerk, Auth0, LeanMCP
+**Supported providers:** AWS Cognito, Clerk, Auth0, Leanmcp
 
 ## @Elicitation Decorator
 

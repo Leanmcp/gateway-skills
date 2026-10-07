@@ -19,7 +19,7 @@ require_absent() {
   fi
 }
 
-require_contains "https://img.shields.io/github/stars/Leanmcp/superview.sh?style=for-the-badge&color=yellow"
+require_contains "https://img.shields.io/github/stars/Leanmcp/superview.sh?style=flat-square&color=yellow"
 require_contains "https://github.com/Leanmcp/superview.sh/stargazers"
 require_contains "https://www.star-history.com/?repos=Leanmcp%2Fsuperview.sh&type=date&legend=top-left"
 require_contains "https://api.star-history.com/image?repos=Leanmcp/superview.sh&type=date&theme=dark&legend=top-left"

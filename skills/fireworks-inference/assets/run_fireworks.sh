@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # run_fireworks.sh — one inference run against Fireworks, direct or through the
-# LeanMCP AI Gateway. Copy this next to your project and replace the marked
+# Leanmcp AI Gateway. Copy this next to your project and replace the marked
 # COMMAND section.
 #
 # The design: direct and gateway differ ONLY in endpoint + key, so the route is
@@ -56,7 +56,7 @@ REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # --------------------------- route + credentials --------------------------- #
 if [[ "$USE_PROXY" -eq 1 ]]; then
-  API_BASE="$PROXY_BASE"; API_KEY="${LEANMCP_API_KEY:-}"; MODE="LeanMCP gateway"
+  API_BASE="$PROXY_BASE"; API_KEY="${LEANMCP_API_KEY:-}"; MODE="Leanmcp gateway"
   [[ -n "$API_KEY" ]] || {
     echo "ERROR: --use-proxy needs LEANMCP_API_KEY." >&2
     echo "  get one at https://app.leanmcp.com/api-keys" >&2

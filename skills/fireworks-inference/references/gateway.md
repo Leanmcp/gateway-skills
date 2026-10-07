@@ -1,4 +1,4 @@
-# The LeanMCP AI Gateway
+# The Leanmcp AI Gateway
 
 An OpenAI-compatible proxy that forwards to Fireworks and logs every request.
 The point is observability you get without instrumenting your code: token counts
@@ -39,7 +39,7 @@ litellm.completion(
 ```
 
 The key swap is the thing people miss: through the gateway you send your
-**LeanMCP** key. The gateway holds the Fireworks credential. Sending the
+**Leanmcp** key. The gateway holds the Fireworks credential. Sending the
 Fireworks key here fails in a way that reads like a broken gateway.
 
 ## What the gateway can and cannot reach
@@ -89,7 +89,7 @@ Run the same request both ways. The difference names the layer:
 | --- | --- | --- |
 | ✅ | ✅ | route is good |
 | ✅ | ❌ 404 | gateway cannot see that model (private deployment) |
-| ✅ | ❌ 401/403 | LeanMCP key, scopes, or credits |
+| ✅ | ❌ 401/403 | Leanmcp key, scopes, or credits |
 | ❌ | ❌ | Fireworks side: model name, Fireworks key, or quota |
 | ❌ | ✅ | your Fireworks key is the problem, not the model |
 

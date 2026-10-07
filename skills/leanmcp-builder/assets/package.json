@@ -1,7 +1,7 @@
 {
   "name": "my-leanmcp-server",
   "version": "1.0.0",
-  "description": "MCP Server with LeanMCP SDK",
+  "description": "MCP Server with Leanmcp SDK",
   "main": "dist/main.js",
   "type": "module",
   "scripts": {

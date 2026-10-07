@@ -1,11 +1,11 @@
 ---
 name: mcp-apps-builder
-description: Build MCP Apps with interactive React UIs using the LeanMCP UI SDK. Use this skill when users ask for "MCP with UI", "MCP App", "interactive MCP", "leanmcp UI", "MCP dashboard", or want to create rich visual interfaces for their MCP tools. This skill covers @UIApp decorator, React components with useTool/useResource hooks, ToolDataGrid, ToolForm, ToolButton, and ChatGPT Apps support.
+description: Build MCP Apps with interactive React UIs using the Leanmcp UI SDK. Use this skill when users ask for "MCP with UI", "MCP App", "interactive MCP", "leanmcp UI", "MCP dashboard", or want to create rich visual interfaces for their MCP tools. This skill covers @UIApp decorator, React components with useTool/useResource hooks, ToolDataGrid, ToolForm, ToolButton, and ChatGPT Apps support.
 ---
 
 # MCP Apps Builder Skill
 
-This skill guides you in building MCP Apps - MCP servers with interactive React UIs using the LeanMCP UI SDK.
+This skill guides you in building MCP Apps - MCP servers with interactive React UIs using the Leanmcp UI SDK.
 
 ## When to Use This Skill
 

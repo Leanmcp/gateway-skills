@@ -197,7 +197,7 @@ def main() -> int:
     else:
         base = args.api_base or GATEWAY_BASE
         key, keyname = os.getenv("LEANMCP_API_KEY"), "LEANMCP_API_KEY"
-        route = "LeanMCP gateway"
+        route = "Leanmcp gateway"
     if not key:
         sys.exit(f"ERROR: {keyname} is not set.")
 

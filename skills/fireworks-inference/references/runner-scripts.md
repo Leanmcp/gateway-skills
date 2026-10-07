@@ -20,7 +20,7 @@ comparable:
 if [[ "$USE_PROXY" -eq 1 ]]; then
   API_BASE="https://aigateway.leanmcp.com/v1/fireworks"
   API_KEY="$LEANMCP_API_KEY"
-  MODE="LeanMCP gateway"
+  MODE="Leanmcp gateway"
 else
   API_BASE="https://api.fireworks.ai/inference/v1"
   API_KEY="$FIREWORKS_API_KEY"

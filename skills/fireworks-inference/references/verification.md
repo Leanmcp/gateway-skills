@@ -44,7 +44,7 @@ library**.
 | --- | --- | --- |
 | ✅ | ✅ | both routes good |
 | ✅ | ❌ 404 | the gateway cannot see that model — private deployment |
-| ✅ | ❌ 401/403 | LeanMCP key, scopes, or credits |
+| ✅ | ❌ 401/403 | Leanmcp key, scopes, or credits |
 | ❌ | ❌ | Fireworks side: model name, key, or quota |
 | ❌ | ✅ | your own Fireworks key is scoped or capped |
 

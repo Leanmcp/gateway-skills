@@ -1,4 +1,4 @@
-# LeanMCP Decorators Reference
+# Leanmcp Decorators Reference
 
 ## @Tool Decorator
 
@@ -163,7 +163,7 @@ export class SecureService {
 - `cognito` - AWS Cognito
 - `clerk` - Clerk (session & OAuth)
 - `auth0` - Auth0
-- `leanmcp` - LeanMCP platform
+- `leanmcp` - Leanmcp platform
 
 ## @Elicitation Decorator
 

@@ -13,4 +13,4 @@ await createHTTPServer({
   logging: true,
 });
 
-console.log('LeanMCP Server running');
+console.log('Leanmcp Server running');

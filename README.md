@@ -1,13 +1,13 @@
 <div align="center">
 
-# LeanMCP AI Gateway
+# Leanmcp Skills & AI Gateway
 
 ### See everything your AI coding agent sends. Every request, every file, every token.
 
-[![Discord](https://img.shields.io/badge/Discord-Join%20Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/DsRcA3GwPy)
-[![Follow on X](https://img.shields.io/badge/X-Follow%20@paidev-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/paidev)
-[![Stars](https://img.shields.io/github/stars/Leanmcp/superview.sh?style=for-the-badge&color=yellow)](https://github.com/Leanmcp/superview.sh/stargazers)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](./LICENSE)
+[![Discord](https://img.shields.io/badge/Discord-Join-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.com/invite/DsRcA3GwPy)
+[![Follow on X](https://img.shields.io/badge/X-@paidev-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/paidev)
+[![Stars](https://img.shields.io/github/stars/Leanmcp/superview.sh?style=flat-square&color=yellow)](https://github.com/Leanmcp/superview.sh/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](./LICENSE)
 
 [Website](https://leanmcp.com/ai-gateway?utm_source=superview&utm_medium=github&utm_campaign=readme) · [Docs](https://docs.leanmcp.com/ai-gateway/claude-code) · [Dashboard](https://app.leanmcp.com)
 
@@ -15,9 +15,11 @@
 
 </div>
 
-## What is the LeanMCP AI Gateway?
+This repository brings together [Leanmcp skills](./skills/README.md), AI Gateway setup, and an open-source AI coding guide. The skills cover MCP development, inference and training, research, security, and documentation workflows.
 
-The LeanMCP AI Gateway is a drop-in proxy that sits between your AI coding agent (Claude Code, or anything that speaks the Anthropic or OpenAI API) and the model provider. You change one URL, and every request shows up in your dashboard:
+## What is the Leanmcp AI Gateway?
+
+The Leanmcp AI Gateway is a drop-in proxy that sits between your AI coding agent (Claude Code, or anything that speaks the Anthropic or OpenAI API) and the model provider. You change one URL, and every request shows up in your dashboard:
 
 - **Full request and response logs.** See the exact prompts, system prompts and tool calls your agent sends.
 - **File visibility.** See which files the agent read and what it pulled into context.
@@ -51,7 +53,7 @@ Full setup guide: [docs.leanmcp.com/ai-gateway/claude-code](https://docs.leanmcp
 
 ## Table of Contents
 
-- [What is the LeanMCP AI Gateway?](#what-is-the-leanmcp-ai-gateway)
+- [What is the Leanmcp AI Gateway?](#what-is-the-leanmcp-ai-gateway)
 - [Quick start: Claude Code](#quick-start-claude-code)
 - [What's in this repo](#whats-in-this-repo)
 - [Why Open Source Matters for AI Coding](#why-open-source-matters-for-ai-coding)
@@ -400,17 +402,17 @@ If you contribute to Claude Code itself, install this skill to ensure your AI-as
 
 ### More skills
 
-The [`skills/`](./skills/) directory holds the skills the LeanMCP team uses every day, covering MCP server development, Fireworks and Tinker inference and training, research observability, security reproductions, and more. Copy any folder into `~/.claude/skills/` to use it. The [skills index](./skills/README.md) lists them all.
+The [`skills/`](./skills/) directory holds the skills the Leanmcp team uses every day, covering MCP server development, Fireworks and Tinker inference and training, research observability, security reproductions, and more. Copy any folder into `~/.claude/skills/` to use it. The [skills index](./skills/README.md) lists them all.
 
 ---
 
 ## Community & Contributing
 
-This repo is a community-driven project maintained by [LeanMCP](https://leanmcp.com). We believe that the future of AI-assisted development should be open, transparent, and accessible to everyone.
+This repo is a community-driven project maintained by [Leanmcp](https://leanmcp.com). We believe that the future of AI-assisted development should be open, transparent, and accessible to everyone.
 
 ### Join Our Community
 
-- **Discord:** [Join the LeanMCP Discord](https://discord.com/invite/DsRcA3GwPy) — Chat with other developers, share your setups, get help, and stay updated on the latest in open-source AI coding.
+- **Discord:** [Join the Leanmcp Discord](https://discord.com/invite/DsRcA3GwPy) — Chat with other developers, share your setups, get help, and stay updated on the latest in open-source AI coding.
 - **X (Twitter):** Follow [@paidev](https://x.com/paidev) for the latest updates, hot takes, and discussions about open-source AI coding tools.
 
 ### How to Contribute
@@ -443,6 +445,14 @@ Helpful resources for getting deeper into AI-assisted coding:
 - **[Model Context Protocol](https://modelcontextprotocol.io/)** — The open standard that many tools use for connecting to external data sources and APIs.
 - **[Ollama](https://ollama.com/)** — The easiest way to run local LLMs. Essential for self-hosting setups.
 - **[vLLM](https://github.com/vllm-project/vllm)** — High-performance LLM inference server for production deployments.
+
+### Leanmcp skills and documentation
+
+- **[Skills index](./skills/README.md)** — Browse the available skills and installation instructions.
+- **[Documentation and writing skills](./skills/README.md#docs-and-writing)** — Code explanations, translations, research-paper checks, and publishing workflows.
+- **[Claude Code style-guide skill](./claude-code-skills/README.md)** — Repository-specific contribution guidance and setup.
+- **[AI Gateway setup guide](https://docs.leanmcp.com/ai-gateway/claude-code)** — Connect Claude Code to the Leanmcp AI Gateway.
+- **[Contributing guide](./CONTRIBUTING.md)** — Add skills, documentation, and other resources to this repository.
 
 ---
 

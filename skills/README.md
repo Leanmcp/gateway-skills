@@ -1,6 +1,6 @@
 # Skills
 
-Claude Code skills used by the LeanMCP team. Each folder is a self-contained skill with a `SKILL.md` at its root.
+Claude Code skills used by the Leanmcp team. Each folder is a self-contained skill with a `SKILL.md` at its root.
 
 ## Install
 
@@ -18,15 +18,15 @@ Claude Code picks it up on the next session and triggers it automatically when t
 
 | Skill | What it does |
 |-------|--------------|
-| [leanmcp-builder](./leanmcp-builder/) | Build MCP servers with the LeanMCP SDK's decorator-based TypeScript: auth, elicitation, env injection. |
-| [mcp-apps-builder](./mcp-apps-builder/) | Build MCP Apps with interactive React UIs using the LeanMCP UI SDK. |
+| [leanmcp-builder](./leanmcp-builder/) | Build MCP servers with the Leanmcp SDK's decorator-based TypeScript: auth, elicitation, env injection. |
+| [mcp-apps-builder](./mcp-apps-builder/) | Build MCP Apps with interactive React UIs using the Leanmcp UI SDK. |
 | [mcp-builder](./mcp-builder/) | Build MCP servers with the official `@modelcontextprotocol/sdk` over Streamable HTTP. |
 
 ### Inference, training and evaluation
 
 | Skill | What it does |
 |-------|--------------|
-| [fireworks-inference](./fireworks-inference/) | Run inference on Fireworks AI directly or through the LeanMCP AI Gateway for observability. |
+| [fireworks-inference](./fireworks-inference/) | Run inference on Fireworks AI directly or through the Leanmcp AI Gateway for observability. |
 | [tinker-training-inference](./tinker-training-inference/) | LoRA and full fine-tuning, SFT and RL on Tinker, plus checkpoints and cost estimates. |
 | [research-observability](./research-observability/) | File-based tracing, transcripts and run comparison for LLM and agent experiments. |
 | [analyze-exports](./analyze-exports/) | Pinpoint where and why tau2-bench tasks failed from export files. |

@@ -1,4 +1,4 @@
-# LeanMCP UI Components Reference
+# Leanmcp UI Components Reference
 
 ## ToolButton
 

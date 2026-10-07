@@ -7,7 +7,7 @@ import {
 } from '@leanmcp/core';
 
 /**
- * Example service demonstrating LeanMCP SDK decorators
+ * Example service demonstrating Leanmcp SDK decorators
  * Place this file at: mcp/example/index.ts
  */
 
@@ -111,7 +111,7 @@ export class ExampleService {
           role: 'user' as const,
           content: {
             type: 'text' as const,
-            text: `Hello ${args.name || 'there'}! Welcome to my LeanMCP server.`,
+            text: `Hello ${args.name || 'there'}! Welcome to my Leanmcp server.`,
           },
         },
       ],

@@ -1,6 +1,6 @@
 ---
 name: fireworks-inference
-description: Run inference on Fireworks AI — direct, through the LeanMCP AI Gateway proxy (aigateway.leanmcp.com) for observability, or via LiteLLM / the OpenAI SDK / raw HTTP. Covers the endpoint-and-key matrix for each route, serverless vs dedicated deployments and their cold starts, browsing and filtering the model catalogue, reasoning models that return content:null with the answer in reasoning_content, function calling, concurrency and load testing, and runner scripts where many models share one protocol with a --use-proxy toggle. Use this skill whenever the user mentions Fireworks, FIREWORKS_API_KEY, api.fireworks.ai, fireworks_ai/ model ids, accounts/fireworks/models/..., a Fireworks deployment id, the LeanMCP gateway or LEANMCP_API_KEY, app.leanmcp.com observability, or gpt-oss / kimi / glm / qwen / deepseek served on Fireworks; wants to route LLM calls through a proxy for logging or cost tracking; is debugging empty responses, 404s, scope errors, cold starts, or "the gateway isn't working"; wants to pick a Fireworks model with tool calling; or wants to sweep several models over one benchmark. Reach for it even on vague asks like "why is this model returning nothing" or "set up inference for these models" when Fireworks is in play.
+description: Run inference on Fireworks AI — direct, through the Leanmcp AI Gateway proxy (aigateway.leanmcp.com) for observability, or via LiteLLM / the OpenAI SDK / raw HTTP. Covers the endpoint-and-key matrix for each route, serverless vs dedicated deployments and their cold starts, browsing and filtering the model catalogue, reasoning models that return content:null with the answer in reasoning_content, function calling, concurrency and load testing, and runner scripts where many models share one protocol with a --use-proxy toggle. Use this skill whenever the user mentions Fireworks, FIREWORKS_API_KEY, api.fireworks.ai, fireworks_ai/ model ids, accounts/fireworks/models/..., a Fireworks deployment id, the Leanmcp gateway or LEANMCP_API_KEY, app.leanmcp.com observability, or gpt-oss / kimi / glm / qwen / deepseek served on Fireworks; wants to route LLM calls through a proxy for logging or cost tracking; is debugging empty responses, 404s, scope errors, cold starts, or "the gateway isn't working"; wants to pick a Fireworks model with tool calling; or wants to sweep several models over one benchmark. Reach for it even on vague asks like "why is this model returning nothing" or "set up inference for these models" when Fireworks is in play.
 ---
 
 # Fireworks inference
@@ -13,7 +13,7 @@ failure is one of them being wrong while you debug another:
    ─────────                ─────                        ─────
    raw HTTP                 direct Fireworks             serverless
    openai SDK        ×      api.fireworks.ai        ×    accounts/fireworks/models/<slug>
-   litellm                  LeanMCP gateway              dedicated deployment
+   litellm                  Leanmcp gateway              dedicated deployment
                             aigateway.leanmcp.com        accounts/<acct>/deployments/<id>
 ```
 
@@ -24,11 +24,11 @@ This skill's job is to let you isolate them one at a time instead of guessing.
 | | base URL | key |
 | --- | --- | --- |
 | **direct Fireworks** | `https://api.fireworks.ai/inference/v1` | `FIREWORKS_API_KEY` |
-| **LeanMCP gateway** | `https://aigateway.leanmcp.com/v1/fireworks` | `LEANMCP_API_KEY` |
+| **Leanmcp gateway** | `https://aigateway.leanmcp.com/v1/fireworks` | `LEANMCP_API_KEY` |
 
 Same models, same request and response shape. **Only the endpoint and the key
 change** — which is why routing should be a flag, never a code path. Note the
-key swap: through the gateway you send your *LeanMCP* key; the gateway holds the
+key swap: through the gateway you send your *Leanmcp* key; the gateway holds the
 Fireworks credential.
 
 Gateway keys at <https://app.leanmcp.com/api-keys> (top up credits first at
@@ -96,7 +96,7 @@ litellm.completion(
     model="fireworks_ai/accounts/fireworks/models/gpt-oss-20b",
     messages=[...],
     api_base="https://aigateway.leanmcp.com/v1/fireworks",   # no /chat/completions
-    api_key=os.environ["LEANMCP_API_KEY"],                    # LeanMCP, not Fireworks
+    api_key=os.environ["LEANMCP_API_KEY"],                    # Leanmcp, not Fireworks
 )
 ```
 

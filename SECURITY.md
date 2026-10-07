@@ -26,7 +26,7 @@ In scope:
 
 - Content in this repository, including the skills under `skills/` and `claude-code-skills/`
 - Secrets or credentials accidentally committed to this repository
-- The LeanMCP AI Gateway (`aigateway.leanmcp.com`) and dashboard (`app.leanmcp.com`)
+- The Leanmcp AI Gateway (`aigateway.leanmcp.com`) and dashboard (`app.leanmcp.com`)
 
 Out of scope:
 

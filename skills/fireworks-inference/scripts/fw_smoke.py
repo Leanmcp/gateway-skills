@@ -214,7 +214,7 @@ def main() -> int:
                    help="slug, deployment id (with --account), or a full path")
     p.add_argument("--account", help="your Fireworks account id — makes --model a deployment id")
     p.add_argument("--direct", action="store_true",
-                   help="hit Fireworks directly instead of the LeanMCP gateway")
+                   help="hit Fireworks directly instead of the Leanmcp gateway")
     p.add_argument("--api-base", help="override the base URL entirely")
     p.add_argument("--transport", choices=["all", "raw", "sdk", "lite"], default="all")
     p.add_argument("--prompt", default="Reply with one short sentence confirming you are reachable.")
@@ -235,7 +235,7 @@ def main() -> int:
     else:
         base = args.api_base or GATEWAY_BASE
         key, keyname = os.getenv("LEANMCP_API_KEY"), "LEANMCP_API_KEY"
-        route = "LeanMCP gateway"
+        route = "Leanmcp gateway"
     if not key:
         print(f"ERROR: {keyname} is not set (shell env or a repo .env).")
         if not args.direct:
